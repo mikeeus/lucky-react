@@ -46,7 +46,9 @@ This syntax uses [JavaScript's destructuring assignment](https://developer.mozil
 LuckyReact.register({ 'Component': Component });
 ```
 
-Then in your Lucky Page you can render your component by setting the `data-react-class` and `daata-react-props` attributes on an element.
+## Rendering on a Lucky Page
+
+You can render components in your Lucky pages by setting the `data-react-class` and `data-react-props` attributes on an element.
 
 ```crystal
 class Home::IndexPage < GuestLayout
@@ -64,10 +66,12 @@ If you have the [lucky_react](https://github.com/mikeeus/lucky_react) shard inst
 
 ```crystal
 class Home::IndexPage < GuestLayout
+  include LuckyReact # include the module
+
   def content
     h1 "React Component"
 
-    react "Component", { message: "Message" } do
+    react "Component", { message: "Message" } do # call `react`
       text "wrapped content"
     end
   end
