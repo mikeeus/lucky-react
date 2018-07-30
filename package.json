@@ -1,0 +1,25 @@
+{
+  "name": "lucky-react",
+  "version": "0.1.0",
+  "description": "Allows rendering React components in Lucky apps",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --reporter spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mikeeus/lucky-react.git"
+  },
+  "keywords": [
+    "lucky",
+    "react",
+    "turbolinks",
+    "crystal"
+  ],
+  "author": "Mikias Abera <itsmikias@gmail.com> (https://mikias.net)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mikeeus/lucky-react/issues"
+  },
+  "homepage": "https://github.com/mikeeus/lucky-react#readme"
+}
