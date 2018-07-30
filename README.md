@@ -60,7 +60,7 @@ class Home::IndexPage < GuestLayout
 end
 ```
 
-If you have the `lucky_react` shard installed you can do this instead.
+If you have the [lucky_react](https://github.com/mikeeus/lucky_react) shard installed you can do this instead.
 
 ```crystal
 class Home::IndexPage < GuestLayout
